@@ -6,6 +6,6 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class MockserverKasukuApplication
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<MockserverKasukuApplication>(*args)
 }

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController
 import personal.zukanori.models.BooksDto
 
 @RestController
-@RequestMapping("books/size")
+@RequestMapping("/books/size")
 class BooksInfoController {
 
     @GetMapping("/{id}", produces = ["application/json"])
