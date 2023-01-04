@@ -6,7 +6,7 @@ import personal.zukanori.models.Message
 
 @RestController
 class MessageController {
-    @GetMapping("/")
+    @GetMapping("/cows")
     fun index() = listOf(
         Message("1", "Hello!"),
         Message("2", "Bonjour!"),
