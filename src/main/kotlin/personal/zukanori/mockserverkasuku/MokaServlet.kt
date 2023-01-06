@@ -14,11 +14,11 @@ import javax.servlet.http.HttpServletResponse
 class MokaServlet : HttpServlet() {
 
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
-        var responseWriter: PrintWriter
-        responseWriter = response.getWriter()
+        var responseWriter: PrintWriter = response.getWriter()
 //        with(responseWriter) {
 //            this.conte
 //        }
+        response.contentType = "text/html"
         responseWriter.print("Mango juice")
         responseWriter.flush()
     }
