@@ -18,7 +18,7 @@ class ServletConfig {
 
     @Bean
     fun servletBean(): ServletRegistrationBean<MokaServlet> {
-        val list = arrayOf ("/mokaServlet",)
+        val list = arrayOf("/mokaServlet",)
         val bean: ServletRegistrationBean<MokaServlet> = ServletRegistrationBean(MokaServlet(), *list)
         bean.setLoadOnStartup(1)
         return bean
